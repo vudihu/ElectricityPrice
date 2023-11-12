@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ElectricityPrice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="EVN_Vietnam_Electricity" translatesAutoresizingMaskIntoConstraints="NO" id="LWM-Nw-fDe">
+                                <rect key="frame" x="96.666666666666686" y="159" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="ldw-52-U9R"/>
+                                    <constraint firstAttribute="width" constant="200" id="qPH-BM-Uzg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bậc:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bpu-4n-99c">
+                                <rect key="frame" x="50" y="459" width="38.666666666666657" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thành tiền(vnd):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7q-ER-fZY">
+                                <rect key="frame" x="50" y="513" width="144.33333333333334" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5F-H8-JIV">
+                                <rect key="frame" x="118.66666666666667" y="459" width="15.000000000000014" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nhập vào số điện" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bKz-ER-Ht8">
+                                <rect key="frame" x="80" y="591.66666666666663" width="233" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YsE-bp-6wP">
+                                <rect key="frame" x="80" y="665.66666666666663" width="233" height="35"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tính tiền điện"/>
+                                <connections>
+                                    <action selector="tapToCalculatePrice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qXP-NB-VBL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8O-Ig-Jc1">
+                                <rect key="frame" x="224.33333333333334" y="513" width="15" height="28.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YsE-bp-6wP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="0NA-wp-4WF"/>
+                            <constraint firstItem="Bpu-4n-99c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="10D-rT-ceW"/>
+                            <constraint firstItem="YsE-bp-6wP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8P6-cv-S4n"/>
+                            <constraint firstItem="LWM-Nw-fDe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="G6m-al-HN3"/>
+                            <constraint firstItem="bKz-ER-Ht8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="GBL-fX-YkD"/>
+                            <constraint firstItem="Bpu-4n-99c" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="ZjE-wR-Z2B"/>
+                            <constraint firstItem="z5F-H8-JIV" firstAttribute="top" secondItem="Bpu-4n-99c" secondAttribute="top" id="bKj-bj-6Rm"/>
+                            <constraint firstItem="z5F-H8-JIV" firstAttribute="leading" secondItem="Bpu-4n-99c" secondAttribute="trailing" constant="30" id="dIX-OU-DJ2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YsE-bp-6wP" secondAttribute="trailing" constant="80" id="eax-zr-hEh"/>
+                            <constraint firstItem="LWM-Nw-fDe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gVx-xk-vli"/>
+                            <constraint firstItem="f7q-ER-fZY" firstAttribute="top" secondItem="Bpu-4n-99c" secondAttribute="bottom" constant="30" id="ggo-Bp-D2B"/>
+                            <constraint firstItem="e8O-Ig-Jc1" firstAttribute="top" secondItem="f7q-ER-fZY" secondAttribute="top" id="iNp-UU-Xd0"/>
+                            <constraint firstItem="bKz-ER-Ht8" firstAttribute="top" secondItem="e8O-Ig-Jc1" secondAttribute="bottom" constant="50" id="j3K-5f-ZOJ"/>
+                            <constraint firstItem="e8O-Ig-Jc1" firstAttribute="leading" secondItem="f7q-ER-fZY" secondAttribute="trailing" constant="30" id="lLC-ME-8bB"/>
+                            <constraint firstItem="bKz-ER-Ht8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qqr-Ih-YtA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bKz-ER-Ht8" secondAttribute="trailing" constant="80" id="rj3-DA-ywi"/>
+                            <constraint firstItem="YsE-bp-6wP" firstAttribute="top" secondItem="bKz-ER-Ht8" secondAttribute="bottom" constant="40" id="s6S-kY-eNu"/>
+                            <constraint firstItem="f7q-ER-fZY" firstAttribute="leading" secondItem="Bpu-4n-99c" secondAttribute="leading" id="wlI-V4-1gf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="calculateButton" destination="YsE-bp-6wP" id="V3p-MQ-YlS"/>
+                        <outlet property="leveLabel" destination="z5F-H8-JIV" id="eja-Cg-OBb"/>
+                        <outlet property="numberTextField" destination="bKz-ER-Ht8" id="1gm-sc-M9X"/>
+                        <outlet property="priceLabel" destination="e8O-Ig-Jc1" id="Bx0-dM-mX8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="EVN_Vietnam_Electricity" width="800" height="1160"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
